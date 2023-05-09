@@ -20,6 +20,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.sourceType = .photoLibrary
+        picker.allowsEditing = true
         
         self.present(picker, animated: true)
     }
@@ -30,4 +31,5 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     }
     
 }
+
 
